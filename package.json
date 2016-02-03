@@ -1,0 +1,21 @@
+{
+  "name": "staying-sharp-with-angular-js",
+  "version": "0.0.1",
+  "description": "CodeSchool.com: Staying sharp with Angular.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickoram/staying-sharp-with-angular-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.4.9",
+    "angular-route": "^1.4.9",
+    "http-server": "^0.8.5",
+    "jquery": "^2.2.0"
+  }
+}
