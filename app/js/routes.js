@@ -3,10 +3,12 @@
         .config(function($routeProvider) {
             $routeProvider
                 .when('/', {
-                    templateUrl: 'templates/pages/notes/index.html'
+                    redirectTo: '/notes'
                 })
                 .when('/notes', {
-                    templateUrl: 'templates/pages/notes/index.html'
+                    templateUrl: 'templates/pages/notes/index.html',
+                    controller: 'NotesIndexController',
+                    controllerAs: 'notesIndexCtrl'
                 })
                 .when('/notes/new', {
                     templateUrl: 'templates/pages/notes/edit.html'
