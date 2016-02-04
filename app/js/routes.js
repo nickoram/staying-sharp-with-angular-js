@@ -11,7 +11,9 @@
                     controllerAs: 'notesIndexCtrl'
                 })
                 .when('/notes/new', {
-                    templateUrl: 'templates/pages/notes/edit.html'
+                    templateUrl: 'templates/pages/notes/edit.html',
+                    controller: 'NotesCreateController',
+                    controllerAs: 'notesCreateCtrl'
                 })
                 .when('/notes/:id', {
                     templateUrl: 'templates/pages/notes/show.html',
