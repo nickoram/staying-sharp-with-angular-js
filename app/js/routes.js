@@ -13,6 +13,11 @@
                 .when('/notes/new', {
                     templateUrl: 'templates/pages/notes/edit.html'
                 })
+                .when('/notes/:id', {
+                    templateUrl: 'templates/pages/notes/show.html',
+                    controller: 'NotesShowController',
+                    controllerAs: 'notesShowCtrl'
+                })
                 .when('/users/', {
                     templateUrl: 'templates/pages/users/index.html'
                 })
