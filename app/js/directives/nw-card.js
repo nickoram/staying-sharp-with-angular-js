@@ -5,8 +5,8 @@
                 restrict: "E",
                 templateUrl: "templates/directives/nw-card.html",
                 scope: {
-                    header: "@",
-                    description: "@"
+                    header: "=",
+                    description: "="
                 }
             };
         });
