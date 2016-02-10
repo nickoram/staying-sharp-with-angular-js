@@ -10,8 +10,8 @@
                     controller: 'NotesIndexController',
                     controllerAs: 'notesIndexCtrl'
                 })
-                .when('/notes/new', {
-                    templateUrl: 'templates/pages/notes/edit.html',
+                .when('/notes/create', {
+                    templateUrl: 'templates/pages/notes/create.html',
                     controller: 'NotesCreateController',
                     controllerAs: 'notesCreateCtrl'
                 })
