@@ -1,12 +1,11 @@
 (function() {
     angular.module('NoteWrangler')
-        .controller('NotesIndexController', function($http, $log) {
-            var controller = this;
-            controller.notes = [];
+        .controller('NotesIndexController', function($http, $scope, $log) {
+            $scope.notes = [];
 
             $http({method: 'GET', url: '/app/data/notes.json'})
                 .success(function(data) {
-                    controller.notes = data;
+                    $scope.notes = data;
                 })
                 .error(function() {
                     $log.error("an error occurred while loading data");
