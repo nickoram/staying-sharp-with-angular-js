@@ -20,7 +20,8 @@
                     controllerAs: 'notesShowCtrl'
                 })
                 .when('/users/', {
-                    templateUrl: 'templates/pages/users/index.html'
+                    templateUrl: 'templates/pages/users/index.html',
+                    controller: 'UsersIndexController'
                 })
                 .otherwise({
                     redirectTo: '/'
