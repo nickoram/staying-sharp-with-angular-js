@@ -6,7 +6,7 @@
                 templateUrl: "templates/directives/nw-card.html",
                 scope: {
                     header: "=",
-                    description: "="
+                    body: "="
                 }
             };
         });
