@@ -6,7 +6,13 @@
                 templateUrl: "templates/directives/nw-card.html",
                 scope: {
                     header: "=",
-                    body: "="
+                    body: "=",
+                    tweeted: "="
+                },
+                link: function(scope, element) {
+                    if (scope.tweeted) {
+                        element.addClass("tweeted");
+                    }
                 }
             };
         });
