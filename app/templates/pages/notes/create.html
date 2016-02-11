@@ -12,7 +12,7 @@
                 <textarea class="form-input" name="description" ng-model="note.description" placeholder="A short description of this note"></textarea>
             </fieldset>
 
-            <button class="btn" ng-click="notesCreateCtrl.createNote(note)" ng-disabled="updating">{{updating ? 'Saving...' : 'Save'}}</button>
+            <button class="btn" ng-click="createNote(note)" ng-disabled="updating">{{updating ? 'Saving...' : 'Save'}}</button>
         </form>
     </div>
 </div>
