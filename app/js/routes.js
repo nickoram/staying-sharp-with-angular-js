@@ -15,8 +15,7 @@
                 })
                 .when('/notes/:id', {
                     templateUrl: 'templates/pages/notes/show.html',
-                    controller: 'NotesShowController',
-                    controllerAs: 'notesShowCtrl'
+                    controller: 'NotesShowController'
                 })
                 .when('/users/', {
                     templateUrl: 'templates/pages/users/index.html',
