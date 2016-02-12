@@ -1,8 +1,8 @@
 (function() {
     angular.module('NoteWrangler')
-        .controller('NotesCreateController', function($scope, $http) {
+        .controller('NotesCreateController', function($scope, Note) {
             $scope.createNote = function(note) {
-                $http({method: 'POST', url: '/app/notes', data: note});
+                Note.create(note);
             }
         });
 })();
