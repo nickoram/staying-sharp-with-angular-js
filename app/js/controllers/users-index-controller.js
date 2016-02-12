@@ -1,11 +1,12 @@
 (function() {
     angular.module('NoteWrangler')
-        .controller('UsersIndexController', function($http, $scope) {
+        .controller('UsersIndexController', function($scope, User) {
             $scope.notes = [];
 
-            $http({method: 'GET', url: '/app/data/users.json'})
+            User.all()
                 .success(function(data) {
                     $scope.users = data;
-                })
+                    console.log(data);
+                });
         });
 })();
