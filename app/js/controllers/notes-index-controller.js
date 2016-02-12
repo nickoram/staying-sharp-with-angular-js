@@ -1,9 +1,9 @@
 (function() {
     angular.module('NoteWrangler')
-        .controller('NotesIndexController', function($http, $scope, $log) {
+        .controller('NotesIndexController', function($scope, $log, Note) {
             $scope.notes = [];
 
-            $http({method: 'GET', url: '/app/data/notes.json'})
+            Note.all()
                 .success(function(data) {
                     $scope.notes = data;
                 })
