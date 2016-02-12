@@ -7,6 +7,9 @@
                 },
                 create: function(note) {
                     return $http({method: 'POST', url: '/app/notes', data: note});
+                },
+                show: function(id) {
+                    return $http({method: 'GET', url: '/app/notes/' + id});
                 }
             };
         });

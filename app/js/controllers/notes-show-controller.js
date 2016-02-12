@@ -1,10 +1,10 @@
 (function() {
     angular.module('NoteWrangler')
-        .controller('NotesShowController', function($http, $routeParams, $scope) {
+        .controller('NotesShowController', function($scope, $routeParams, Note) {
 
             $scope.errors = null;
 
-            $http({method: 'GET', url: '/app/notes/' + $routeParams.id})
+            Note.show($routeParams.id)
                 .success(function(data) {
                     $scope.note = data;
                 })
