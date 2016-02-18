@@ -3,7 +3,7 @@
         .factory('User', function UserFactory($http) {
             return {
                 all: function() {
-                    return $http({method: 'GET', url: '/app/data/users.json'});
+                    return $http({method: 'GET', url: '/data/users.json'});
                 }
             };
         });
