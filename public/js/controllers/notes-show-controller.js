@@ -1,6 +1,6 @@
 (function() {
     angular.module('NoteWrangler')
-        .controller('NotesShowController', function($scope, $routeParams, Note) {
+        .controller('NotesShowController', function($scope, $routeParams, Note, Tweetable) {
 
             $scope.errors = null;
 
@@ -13,5 +13,12 @@
                         "to call. Enter express js stage left."
                     $scope.errors = data;
                 });
+
+            $scope.tweetThat = function(description) {
+                Tweetable.tweetThat(description)
+                    .success(function(data) {
+                        console.log(data);
+                    });
+            };
         });
 })();
