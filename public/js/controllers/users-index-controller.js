@@ -1,12 +1,13 @@
 (function() {
     angular.module('NoteWrangler')
-        .controller('UsersIndexController', function($scope, User) {
+        .controller('UsersIndexController', function($scope, User, Gravatar) {
             $scope.notes = [];
 
             User.all()
                 .success(function(data) {
                     $scope.users = data;
-                    console.log(data);
                 });
+
+            $scope.gravatarUrl = Gravatar.generate;
         });
 })();

@@ -3,7 +3,7 @@
 
     <div class="users-wrapper">
         <a class="card-users" ng-repeat="user in users">
-            <nw-card header="user.name" body="user.bio"></nw-card>
+            <nw-card header="user.name" body="user.bio" image="gravatarUrl(user.email)"></nw-card>
         </a>
     </div>
 

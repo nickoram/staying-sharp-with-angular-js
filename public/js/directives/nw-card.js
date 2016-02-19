@@ -7,7 +7,8 @@
                 scope: {
                     header: "=",
                     body: "=",
-                    tweeted: "="
+                    tweeted: "=",
+                    image: "="
                 },
                 link: function(scope, element) {
                     if (scope.tweeted) {

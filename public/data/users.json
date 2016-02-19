@@ -1,14 +1,17 @@
 [
     {
         "name": "Joe Bob",
-        "bio": "Nam ea doctus bonorum ullamcorper, ne inani appareat recusabo sea. Usu ex eius iudico argumentum, an qui brute urbanitas."
+        "bio": "Nam ea doctus bonorum ullamcorper, ne inani appareat recusabo sea. Usu ex eius iudico argumentum, an qui brute urbanitas.",
+        "email": "jbob@example.com"
     },
     {
         "name": "Billy Bob",
-        "bio": "Duo eu aperiam inermis, nihil populo scaevola vim an. Nam ea doctus bonorum ullamcorper, ne inani appareat."
+        "bio": "Duo eu aperiam inermis, nihil populo scaevola vim an. Nam ea doctus bonorum ullamcorper, ne inani appareat.",
+        "email": "bbob@example.com"
     },
     {
         "name": "Sally Bob",
-        "bio": "Appareat recusabo sea. Usu ex eius iudico argumentum, an qui brute urbanitas."
+        "bio": "Appareat recusabo sea. Usu ex eius iudico argumentum, an qui brute urbanitas.",
+        "email": "sbob@example.com"
     }
 ]
