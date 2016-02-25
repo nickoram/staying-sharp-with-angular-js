@@ -9,9 +9,11 @@
                     activeCategory: '='
                 },
                 controller: function($scope) {
+                    this.getActiveCategory = function() {
+                        return $scope.activeCategory;
+                    };
                     this.setActiveCategory = function(category) {
                         $scope.activeCategory = category && category.name;
-                        console.log($scope.activeCategory);
                     };
                 },
                 link: function(scope, element, attrs) {

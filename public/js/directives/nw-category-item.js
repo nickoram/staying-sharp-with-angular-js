@@ -9,9 +9,12 @@
                     category: '='
                 },
                 link: function(scope, element, attrs, nwCategorySelectCtrl) {
+                    scope.isActive = function() {
+                        return nwCategorySelectCtrl.getActiveCategory() === scope.category.name;
+                    };
                     scope.makeActive = function() {
                         nwCategorySelectCtrl.setActiveCategory(scope.category);
-                    }
+                    };
                 }
             };
         });
