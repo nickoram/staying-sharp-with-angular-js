@@ -4,9 +4,11 @@
             <h1 title="Notes">Notes</h1>
         </div>
 
+        <input ng-model="search.$"></input>
+
         <div class="note-wrapper">
             <a class="card-notes"
-                ng-repeat="note in notes | filter: {category: {name: current}}"
+                ng-repeat="note in notes | filter: {category: {name: current}} | filter: search"
                 ng-href="#/notes/{{note.id}}">
                 <nw-card header="note.title" body="note.description" tweeted="note.tweeted"></nw-card>
             </a>
