@@ -6,7 +6,7 @@
 
         <div class="note-wrapper">
             <a class="card-notes"
-                ng-repeat="note in notes"
+                ng-repeat="note in notes | filter: {category: {name: current}}"
                 ng-href="#/notes/{{note.id}}">
                 <nw-card header="note.title" body="note.description" tweeted="note.tweeted"></nw-card>
             </a>
@@ -14,5 +14,5 @@
 
     </div>
 
-    <nw-category-select active-category='undefined'></nw-category-select>
+    <nw-category-select active-category='current'></nw-category-select>
 </div>
